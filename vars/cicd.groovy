@@ -1,9 +1,3 @@
-def gitDownload(repo, branch = 'main')
-{
+def gitDownload(repo, branch = 'main') {
     git branch: branch, url: "https://github.com/DurgeshPokkula/${repo}.git"
 }
-
-//def gitDownload(repo)
-{
-  git "https://github.com/DurgeshPokkula/${repo}.git"
-} //
