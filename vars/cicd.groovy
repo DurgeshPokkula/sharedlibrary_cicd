@@ -12,6 +12,6 @@ def deployTomcat(jobname,ip,context)
 }  
 def executeSelenium(jobname)
 {
-   
+    git branch: 'master', url: "https://github.com/DurgeshPokkula/FunctionalTesting.git"
     sh "java -jar /var/lib/jenkins/.jenkins/workspace/${jobname}/testing.jar"
 }
